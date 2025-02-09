@@ -198,11 +198,11 @@ fill="none"
     <div className="collapse navbar-collapse" id="myNavbar">
       <ul className="nav navbar-nav">
         <li className="active">
-          <Link to=""
+          <Link to="/mim"
             href="#"
             style={{
               color: "white",
-              backgroundColor: location.pathname === "/" ? "#b71c1c" : "transparent",
+              backgroundColor: location.pathname === "/mim" ? "#b71c1c" : "transparent",
               fontWeight: "bold",
               height: "100%",
               marginTop: "25px",
@@ -320,7 +320,7 @@ function Loader() {
 // Slider Component
 const Slider = () => {
   const l = ["https://i.ibb.co/2YKx5mMc/images.png", "https://i.ibb.co/fVHrYNP4/Moroccan-food-tour-shop-2020-09938-scaled-1.jpg","https://i.ibb.co/5h0w08Ky/savon-de-menage-au-lavande-el-kef.jpg",
-  ,"https://i.ibb.co/YTRxc4K1/jhguf.png","ttps://i.ibb.co/jPLzc0zs/images-8.jpg","https://i.ibb.co/x8J3RQ83/images-7.jpg","https://i.ibb.co/rPG5Myt/images-6.jpg","https://i.ibb.co/chvLjQJz/images-5.jpg"];
+  ,"https://i.ibb.co/YTRxc4K1/jhguf.png","https://i.ibb.co/jPLzc0zs/images-8.jpg","https://i.ibb.co/x8J3RQ83/images-7.jpg","https://i.ibb.co/rPG5Myt/images-6.jpg","https://i.ibb.co/chvLjQJz/images-5.jpg"];
   return (
     <main>
       <div
@@ -362,7 +362,7 @@ function View() {
     <>
      
       <BrowserRouter> <Navbar /><Routes>
-        <Route path="/" element={<>
+        <Route path="/mim" element={<>
         
         {!show ? (
           <Loader key="loader" />
@@ -449,11 +449,11 @@ function View() {
       <section className="container mx-auto px-4 py-8">
       {/* Section Template */}
       {sections.map((section, index) => (
-        <div key={index} className={` flex flex-col md:flex-row items-center gap-8 my-12 ${index % 2 === 0 ? '' : 'md:flex-row-reverse'}`}>
-          <figure className="md:w-1/2 w-full autoShow">
-            <img src={section.image} alt="" className="w-full h-full rounded-lg shadow-lg" />
+        <div key={index} className={` row`}>
+          <figure className=" autoShow " >
+        <div className="col-md-6">    <img src={section.image} style={{width:"100%"}} alt=""    /> </div>
           </figure>
-          <h2 className="md:w-1/2 w-full text-center text-red-600 font-bold text-xl md:text-2xl leading-relaxed autoShow">
+          <h2  className="col-md-6  text-center text-red-600 font-bold text-xl md:text-2xl leading-relaxed autoShow">
             {section.text}
           </h2>
         </div>
