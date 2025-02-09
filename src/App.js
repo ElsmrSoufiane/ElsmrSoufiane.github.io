@@ -30,8 +30,9 @@ const sections = [
 ];
 const Footer = () => {
   return (
-    <footer
-      style={{
+    <motion.footer
+
+    style={{
         backgroundColor: "#dc3545", // Red danger color
         color: "white", // White text for contrast
         textAlign: "center", // Center-align the text
@@ -47,7 +48,7 @@ const Footer = () => {
       }}
     >
       Développé par Lasmar Soufiane
-    </footer>
+    </motion.footer>
   );
 };
 
@@ -195,8 +196,8 @@ fill="none"
         </div>
       </a>
     </div>
-    <div className="collapse navbar-collapse" id="myNavbar">
-      <ul className="nav navbar-nav">
+    <div className="collapse navbar-collapse" style={{border:"none"}} id="myNavbar">
+      <ul className="nav navbar-nav" style={{border:"none"}}>
         <li className="active">
           <Link to="/mim"
             href="#"
@@ -409,7 +410,7 @@ function View() {
           top: "10%", // Adjusted for better positioning
           color: "white",
           textShadow: "2px 2px 8px black",
-          fontSize: "clamp(1.2rem, 4vw, 1.8rem)", // Responsive font size
+          fontSize: "clamp(1.1rem, 3vw, 1.5rem)", // Responsive font size
           maxWidth: "80%", // Ensure text doesn't overflow
           lineHeight: "1.5", // Improved readability
         }}
@@ -461,8 +462,8 @@ function View() {
 
       {/* Decorative Separator */}
       <hr className="border-4 border-red-600 bg-red-600 rounded-full my-8" />
-    </section> </motion.div> </AnimatePresence></LayoutGroup> ) }  
-    <Footer></Footer>  </>} ></Route>
+    </section> <Footer></Footer> </motion.div> </AnimatePresence></LayoutGroup> ) }  
+     </>} ></Route>
         <Route path="/prds" element={<NewsCards></NewsCards>} ></Route>
         <Route path="/blog/:id" element={<BlogPost></BlogPost>} ></Route>
         </Routes></BrowserRouter>
