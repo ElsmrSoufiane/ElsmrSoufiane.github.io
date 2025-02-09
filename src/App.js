@@ -8,23 +8,23 @@ const imgs=["1.png","2.png","4.png","5.png","6.png"];
 
 const sections = [
   {
-    image: "1.png",
+    image: "https://i.ibb.co/zVxnFBf5/1.png",
     text: "Plongez dans l’univers enchanteur des produits 100% marocains, où tradition, savoir-faire et passion se rencontrent. Des trésors artisanaux aux bienfaits naturels, chaque création raconte une histoire et vous invite à vivre une expérience unique, riche en couleurs et en émotions. Bienvenue dans un voyage au cœur du Maroc !"
   },
   {
-    image: "2.png",
+    image: "https://i.ibb.co/ycsf3zhp/2.png",
     text: "Le Maroc, terre de traditions et de savoir-faire ancestral, regorge de trésors authentiques qui racontent une histoire riche et envoûtante. Dans notre blog, nous vous invitons à explorer une sélection de produits 100% marocains, fabriqués avec passion et amour par des artisans locaux."
   },
   {
-    image: "4.png",
+    image: "https://i.ibb.co/gMVDqPf2/4.png",
     text: "Des huiles d’argan précieuses, extraites des arganiers de la région de Souss, aux poteries berbères aux motifs hypnotisants, chaque produit incarne l’âme du Maroc. Laissez-vous séduire par les tapis tissés à la main, les lanternes en métal finement ciselées, ou encore les savons noirs purifiants, issus de recettes transmises de génération en génération."
   },
   {
-    image: "5.png",
+    image: "https://i.ibb.co/MD9xQZX5/5.png",
     text: "Nous mettons en lumière des créations uniques, alliant tradition et modernité, pour vous offrir une expérience sensorielle inoubliable. Que ce soit pour sublimer votre intérieur, prendre soin de votre peau ou apporter une touche d’exotisme à votre quotidien, ces produits 100% marocains sont bien plus que de simples objets : ce sont des morceaux de culture à partager."
   },
   {
-    image: "6.png",
+    image: "https://i.ibb.co/932P57BX/6.png",
     text: "Rejoignez-nous dans cette aventure et plongez au cœur du Maroc, où chaque produit raconte une histoire, chaque détail est une invitation au voyage."
   }
 ];
@@ -290,8 +290,8 @@ function Loader() {
           paddingTop: "15px",
         }}
       >
-        <Photo2 delay={0.3} img="Moroccan-food-tour-shop-2020-09938-scaled-1.jpg" />
-        <Photo2 delay={0.5} img="images (3).jfif" />
+        <Photo2 delay={0.3} img="https://i.ibb.co/fVHrYNP4/Moroccan-food-tour-shop-2020-09938-scaled-1.jpg" />
+        <Photo2 delay={0.5} img="https://i.ibb.co/0pxQftsL/images-3.jpg" />
       </div>
       <div
         style={{
@@ -301,7 +301,7 @@ function Loader() {
           paddingTop: "15px",
         }}
       >
-        <Photo1 img="baner1.jpg" isExpanded={false} />
+        <Photo1 img="https://i.ibb.co/20psTszD/baner1.jpg" isExpanded={false} />
       </div>
       <div
         style={{
@@ -310,8 +310,8 @@ function Loader() {
           alignItems: "center",
         }}
       >
-        <Photo2 delay={0.8} img="images.png" />
-        <Photo2 delay={1} img="images (4).jfif" />
+        <Photo2 delay={0.8} img="https://i.ibb.co/2YKx5mMc/images.png" />
+        <Photo2 delay={1} img="https://i.ibb.co/LDGKk7p8/images-4.jpg" />
       </div>
     </motion.div>
   );
@@ -319,7 +319,8 @@ function Loader() {
 
 // Slider Component
 const Slider = () => {
-  const l = ["images.png", "Moroccan-food-tour-shop-2020-09938-scaled-1.jpg","savon-de-menage-au-lavande-el-kef.jpg","jhguf.png","images (8).jfif","images (7).jfif","images (6).jfif","images (5).jfif"];
+  const l = ["https://i.ibb.co/2YKx5mMc/images.png", "https://i.ibb.co/fVHrYNP4/Moroccan-food-tour-shop-2020-09938-scaled-1.jpg","https://i.ibb.co/5h0w08Ky/savon-de-menage-au-lavande-el-kef.jpg",
+  ,"https://i.ibb.co/YTRxc4K1/jhguf.png","ttps://i.ibb.co/jPLzc0zs/images-8.jpg","https://i.ibb.co/x8J3RQ83/images-7.jpg","https://i.ibb.co/rPG5Myt/images-6.jpg","https://i.ibb.co/chvLjQJz/images-5.jpg"];
   return (
     <main>
       <div
@@ -395,7 +396,7 @@ function View() {
     >
       {/* Banner Image */}
       <img
-        src="baner1.jpg"
+        src="https://i.ibb.co/20psTszD/baner1.jpg"
         alt="Moroccan item"
         style={{ width: "100%", height: "auto", borderRadius: "8px" }}
       />
@@ -408,7 +409,7 @@ function View() {
           top: "10%", // Adjusted for better positioning
           color: "white",
           textShadow: "2px 2px 8px black",
-          fontSize: "clamp(1.2rem, 4vw, 2.5rem)", // Responsive font size
+          fontSize: "clamp(1.2rem, 4vw, 1.8rem)", // Responsive font size
           maxWidth: "80%", // Ensure text doesn't overflow
           lineHeight: "1.5", // Improved readability
         }}

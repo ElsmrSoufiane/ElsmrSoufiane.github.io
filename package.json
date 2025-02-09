@@ -1,7 +1,7 @@
-{"homepage": "https://ElsmrSoufiane.github.io/mim",
+{"homepage": "https://ElsmrSoufiane.github.io/mim/",
   "name": "maroc",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.1",
     "axios": "^1.7.9",
@@ -15,7 +15,7 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {"predeploy": "npm run build",
-  "deploy": "gh-pages -d build",
+  "deploy": "gh-pages -d build -r https://github.com/ElsmrSoufiane/mim.git",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
