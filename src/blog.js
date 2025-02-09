@@ -1,5 +1,5 @@
-import axios from 'axios';
-import React, { useEffect, useRef, useState } from 'react';
+
+import React  from 'react';
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 const BlogPost = () => {
@@ -8,31 +8,13 @@ const BlogPost = () => {
   const produit=lp.find(e=>{
     return e.id==id;
   })
-  const nom=useRef();
-  const sexe=useRef();
-  const texte=useRef();
-  const [coments,setC]=useState();
-  useEffect(()=>{
-axios.get("https://67a71fae510789ef0dfd09ba.mockapi.io/coments/1").then((rep)=>{
-  setC(rep.data);
-}).catch((error) => {
-  console.error("Error fetching comments:", error);
-});
-  },[])
-  function ajout(){
-    axios.post("https://67a71fae510789ef0dfd09ba.mockapi.io/coments/1",{
-      idp:1,
-      nom:nom.current.value,
-      sexe:sexe.current.value,
-      texte:texte.current.value,
-      id:new Date().getTime()
-
-    })
-  }
+ 
+  
+  
   return (
     <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 15px', marginTop: '1rem' }}>
       <div>
-        {console.log(coments)}
+        
         {/* Post content */}
         <article>
           {/* Post header */}

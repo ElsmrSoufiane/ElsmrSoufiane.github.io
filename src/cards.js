@@ -59,7 +59,7 @@ const NewsCards = () => {
                
               </div>
               <h1 className="card-title">{article.description}</h1>
-              <div className="card-creator">  <Link to={"/blog/"+article.id} ><a href="#">{article.nom}</a></Link></div>
+              <div className="card-creator">  <Link to={"/blog/"+article.id} >{article.nom}</Link></div>
             </div>
           </div>
         ))}
