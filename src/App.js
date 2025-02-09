@@ -410,7 +410,7 @@ function View() {
           top: "10%", // Adjusted for better positioning
           color: "white",
           textShadow: "2px 2px 8px black",
-          fontSize: "clamp(1.1rem, 3vw, 1.5rem)", // Responsive font size
+          fontSize: "clamp(0.9rem, 3vw, 1.5rem)", // Responsive font size
           maxWidth: "80%", // Ensure text doesn't overflow
           lineHeight: "1.5", // Improved readability
         }}
