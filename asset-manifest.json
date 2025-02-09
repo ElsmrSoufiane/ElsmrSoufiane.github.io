@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mim/build/static/css/main.9a6186e5.css",
-    "main.js": "/mim/build/static/js/main.ce0ce147.js",
-    "static/js/563.dfe27a1d.chunk.js": "/mim/build/static/js/563.dfe27a1d.chunk.js",
-    "index.html": "/mim/build/index.html",
-    "main.9a6186e5.css.map": "/mim/build/static/css/main.9a6186e5.css.map",
-    "main.ce0ce147.js.map": "/mim/build/static/js/main.ce0ce147.js.map",
-    "563.dfe27a1d.chunk.js.map": "/mim/build/static/js/563.dfe27a1d.chunk.js.map"
+    "main.css": "/static/css/main.9a6186e5.css",
+    "main.js": "/static/js/main.84d86eff.js",
+    "static/js/563.dfe27a1d.chunk.js": "/static/js/563.dfe27a1d.chunk.js",
+    "index.html": "/index.html",
+    "main.9a6186e5.css.map": "/static/css/main.9a6186e5.css.map",
+    "main.84d86eff.js.map": "/static/js/main.84d86eff.js.map",
+    "563.dfe27a1d.chunk.js.map": "/static/js/563.dfe27a1d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9a6186e5.css",
-    "static/js/main.ce0ce147.js"
+    "static/js/main.84d86eff.js"
   ]
 }
