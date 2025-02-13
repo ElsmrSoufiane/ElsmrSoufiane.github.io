@@ -4,7 +4,7 @@ import "./App.css";
 import NewsCards from "./cards";
 import { BrowserRouter,Link,Route,Routes,useLocation } from "react-router-dom";
 import BlogPost from "./blog";
-const imgs=["1.png","2.png","4.png","5.png","6.png"];
+
 
 const sections = [
   {
@@ -199,11 +199,11 @@ fill="none"
     <div className="collapse navbar-collapse" style={{border:"none"}} id="myNavbar">
       <ul className="nav navbar-nav" style={{border:"none"}}>
         <li className="active">
-          <Link to="/mim"
+          <Link to="/"
             href="#"
             style={{
               color: "white",
-              backgroundColor: location.pathname === "/mim" ? "#b71c1c" : "transparent",
+              backgroundColor: location.pathname === "/" ? "#b71c1c" : "transparent",
               fontWeight: "bold",
               height: "100%",
               marginTop: "25px",
@@ -363,7 +363,7 @@ function View() {
     <>
      
       <BrowserRouter> <Navbar /><Routes>
-        <Route path="/mim" element={<>
+        <Route path="/" element={<>
         
         {!show ? (
           <Loader key="loader" />

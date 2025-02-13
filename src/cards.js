@@ -7,40 +7,10 @@ import { useSelector } from "react-redux";
 const NewsCards = () => {
   const d=useDispatch();
   const lp=useSelector(st=>st.produits.lp);
-    const articles = [
-      {
-        id: 1,
-        tag: "NEWS",
-        date: "6/11/2018",
-        title: "There has been a big Tesla accident at New Jersey",
-        author: "Sardorbek Usmonov",
-        img: "1.png"
-      },
-      {
-        id: 2,
-        tag: "Tech",
-        date: "6/07/2018",
-        title: "Samsung laptops are exploding again",
-        author: "Tyler Platt",
-        img: "2.png"
-      },
-      {
-        id: 3,
-        tag: "Deals",
-        date: "5/27/2018",
-        title: "Apple is having a big sale for the first time",
-        author: "Timur Mirzoyev",
-        img: "4.png"
-      },
-      {
-        id: 4,
-        tag: "Politics",
-        date: "5/20/2018",
-        title: "Net Neutrality is coming to its end",
-        author: "Gregoy Trem",
-        img: "5.png"
-      },
-    ];
+
+
+  
+ 
   
     return ( <div><center> <br></br>
       <input onChange={(e)=>d(chercher(e.target.value))} className="form-control" style={{width:"40%"}} placeholder="chercher sur un produit" ></input>

@@ -9,7 +9,7 @@ const produit = [
     },
     {
       id: 1,
-      image: "https://myrathes.ma/wp-content/uploads/2024/05/quels-sont-les-bienfaits-du-savon-noir-curls-essentielle-magazine.webp",
+      image: "https://achagros.com/wp-content/uploads/2021/03/savon-noir-marocain.jpg",
       nom: "Savon noir marocain",
       prix: "80Dhs",
       description: "Savon noir naturel à base d'huile d'olive, parfait pour le gommage.",
