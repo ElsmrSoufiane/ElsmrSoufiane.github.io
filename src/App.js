@@ -63,7 +63,7 @@ const Navbar = () => {
   transition={{ duration: 0.5, ease: "easeInOut" }}
   className="navbar navbar-inverse"
   style={{
-    backgroundColor: "rgb(247, 38, 38)",
+    backgroundColor: "rgb(228, 64, 64)",
     border: "none",
     borderRadius: "0",
     marginBottom: "0",
