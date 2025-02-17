@@ -1,19 +1,25 @@
 import "./card.css";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { chercher } from "./slice";
+import { chercher2,filtr } from "./slice";
 import { useSelector } from "react-redux";
 import { motion } from "framer-motion";
-const NewsCards = () => {
+import { categories } from "./data";
+const Cardm = () => {
   const d=useDispatch();
-  const lp=useSelector(st=>st.produits.lp);
+  const lp=useSelector(st=>st.produits.lpm);
 
 
   
  
   
     return ( <div><center> <br></br>
-      <input onChange={(e)=>d(chercher(e.target.value))} className="form-control" style={{width:"80%"}} placeholder="chercher sur un produit" ></input>
+      <input onChange={(e)=>d(chercher2(e.target.value))} className="form-control" style={{width:"80%"}} placeholder="chercher sur un produit" ></input>
+      <br></br>
+      chercher par categorie: <select className="form-control" style={{width:"80%"}} onChange={(e)=>d(filtr(e.target.value))}  >
+        {categories.map((e,i)=>{
+            return <option key={i} value={e}> {e} </option>
+        })} </select>
     </center>
       <div className="card-container">
 
@@ -39,4 +45,4 @@ const NewsCards = () => {
     );
   };
   
-  export default NewsCards;
+  export default Cardm ;

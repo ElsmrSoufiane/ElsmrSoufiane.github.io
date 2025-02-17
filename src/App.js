@@ -4,7 +4,7 @@ import "./App.css";
 import NewsCards from "./cards";
 import { BrowserRouter,Link,Route,Routes,useLocation } from "react-router-dom";
 import BlogPost from "./blog";
-
+import Cardm from "./cardm";
 
 const sections = [
   {
@@ -31,23 +31,33 @@ const sections = [
 const Footer = () => {
   return (
     <motion.footer
-
-    style={{
-        backgroundColor: "#dc3545", // Red danger color
-        color: "white", // White text for contrast
-        textAlign: "center", // Center-align the text
-        padding: "20px 0", // Add padding for spacing
-        fontSize: "16px", // Set font size
-        fontWeight: "bold", // Bold text
-        fontFamily: "Arial, sans-serif", // Use a clean font
-         // Fix the footer at the bottom
-        left: "0",
-        bottom: "0",
-        width: "100%", // Full width
-        boxShadow: "0 -2px 10px rgba(0, 0, 0, 0.1)", // Add a subtle shadow
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      style={{
+        
+        width: "100%",
+        backgroundColor: "#dc3545",
+        color: "white",
+        textAlign: "center",
+        padding: "15px 0",
+        fontSize: "16px",
+        fontFamily: "Arial, sans-serif",
+        boxShadow: "0 -2px 10px rgba(0, 0, 0, 0.1)",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        gap: "5px",
       }}
     >
-      Développé par Lasmar Soufiane
+      <p style={{ fontWeight: "bold", margin: "0" }}>Soufiane Lasmar</p>
+      <p style={{ margin: "0" }}>
+        📧 <a href="mailto:soufianeasmar0@gmail.com" style={{ color: "white", textDecoration: "none" }}>soufianeasmar0@gmail.com</a>
+      </p>
+      <p style={{ margin: "0" }}>📞 0766548709</p>
+      <p style={{ margin: "10px 0 0", fontSize: "14px", opacity: "0.8" }}>
+        © {new Date().getFullYear()} Soufiane Lasmar. All rights reserved.
+      </p>
     </motion.footer>
   );
 };
@@ -223,7 +233,20 @@ fill="none"
               marginTop: "25px",
             }}
           >
-            Produits
+            produits traditionnels
+          </Link>
+        </li><li>
+          <Link
+            to="/prdsm"
+            style={{
+              color: "white",
+              backgroundColor: location.pathname === "/prdsm" ? "#b71c1c" : "transparent",
+              fontWeight: "bold",
+              height: "100%",
+              marginTop: "25px",
+            }}
+          >
+            produits modernes
           </Link>
         </li>
       </ul>
@@ -451,12 +474,16 @@ function View() {
       {/* Section Template */}
       {sections.map((section, index) => (
         <div key={index} className={` row`}>
-          <figure className=" autoShow " >
+          <motion.figure initial={{scale:0.6}}
+          transition={{duration:0.5}}
+          whileInView={{scale:1}}  >
         <div className="col-md-6">    <img src={section.image} style={{width:"100%"}} alt=""    /> </div>
-          </figure>
-          <h2  className="col-md-6  text-center text-red-600 font-bold text-xl md:text-2xl leading-relaxed autoShow">
+          </motion.figure>
+          <motion.h2  initial={{scale:0.6}}
+          transition={{duration:0.5}}
+          whileInView={{scale:1}}  className="col-md-6  text-center text-red-600 font-bold text-xl md:text-2xl leading-relaxed ">
             {section.text}
-          </h2>
+          </motion.h2>
         </div>
       ))}
 
@@ -464,8 +491,10 @@ function View() {
       <hr className="border-4 border-red-600 bg-red-600 rounded-full my-8" />
     </section> <Footer></Footer> </motion.div> </AnimatePresence></LayoutGroup> ) }  
      </>} ></Route>
-        <Route path="/prds" element={<NewsCards></NewsCards>} ></Route>
-        <Route path="/blog/:id" element={<BlogPost></BlogPost>} ></Route>
+        <Route path="/prds" element={<><NewsCards></NewsCards></>} ></Route>
+        <Route path="/blog/:id" element={<><BlogPost></BlogPost></>} ></Route>
+        <Route path="/prdsm" element={<><Cardm></Cardm></>} ></Route>
+        
         </Routes></BrowserRouter>
      
     </>
