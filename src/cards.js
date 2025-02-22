@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { chercher } from "./slice";
 import { useSelector } from "react-redux";
 import { motion } from "framer-motion";
+import AdSense from "./ads";
 const NewsCards = () => {
   const d=useDispatch();
   const lp=useSelector(st=>st.produits.lp);
@@ -35,7 +36,7 @@ const NewsCards = () => {
             </div>
           </motion.div>
         ))}
-      </div></div>
+      </div>   <AdSense></AdSense></div>
     );
   };
   

@@ -5,7 +5,7 @@ import NewsCards from "./cards";
 import { BrowserRouter,Link,Route,Routes,useLocation } from "react-router-dom";
 import BlogPost from "./blog";
 import Cardm from "./cardm";
-
+import AdSense from "./ads";
 const sections = [
   {
     image: "https://i.ibb.co/zVxnFBf5/1.png",
@@ -470,6 +470,7 @@ function View() {
       <br></br>
       <Slider />
       <br></br>
+      <AdSense></AdSense>
       <section className="container mx-auto px-4 py-8">
       {/* Section Template */}
       {sections.map((section, index) => (
@@ -489,7 +490,7 @@ function View() {
 
       {/* Decorative Separator */}
       <hr className="border-4 border-red-600 bg-red-600 rounded-full my-8" />
-    </section> <Footer></Footer> </motion.div> </AnimatePresence></LayoutGroup> ) }  
+    </section>    <AdSense></AdSense><Footer></Footer> </motion.div> </AnimatePresence></LayoutGroup> ) }  
      </>} ></Route>
         <Route path="/prds" element={<><NewsCards></NewsCards></>} ></Route>
         <Route path="/blog/:id" element={<><BlogPost></BlogPost></>} ></Route>

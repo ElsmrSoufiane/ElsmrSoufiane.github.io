@@ -5,6 +5,7 @@ import { chercher2,filtr } from "./slice";
 import { useSelector } from "react-redux";
 import { motion } from "framer-motion";
 import { categories } from "./data";
+import AdSense from "./ads";
 const Cardm = () => {
   const d=useDispatch();
   const lp=useSelector(st=>st.produits.lpm);
@@ -40,7 +41,7 @@ const Cardm = () => {
               <div className="card-creator">  <Link to={"/blog/"+article.id} >{article.anciennete}</Link></div>
             </div>
           </motion.div>
-        ))}
+        ))}   <AdSense></AdSense>
       </div></div>
     );
   };
