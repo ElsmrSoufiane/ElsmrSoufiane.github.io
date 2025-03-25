@@ -50,13 +50,13 @@ const Footer = () => {
         gap: "5px",
       }}
     >
-      <p style={{ fontWeight: "bold", margin: "0" }}>Soufiane Lasmar</p>
+      <p style={{ fontWeight: "bold", margin: "0" }}>enabt saif-edine</p>
       <p style={{ margin: "0" }}>
-        📧 <a href="mailto:soufianeasmar0@gmail.com" style={{ color: "white", textDecoration: "none" }}>soufianeasmar0@gmail.com</a>
+        📧 <a href="mailto:enabtsaif@gmail.com" style={{ color: "white", textDecoration: "none" }}>enabtsaif@gmail.com</a>
       </p>
       <p style={{ margin: "0" }}>📞 0766548709</p>
       <p style={{ margin: "10px 0 0", fontSize: "14px", opacity: "0.8" }}>
-        © {new Date().getFullYear()} Soufiane Lasmar. All rights reserved.
+        © {new Date().getFullYear()} enbat saifeddine. All rights reserved.
       </p>
     </motion.footer>
   );
