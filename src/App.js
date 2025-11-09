@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import './App.css';
-import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, NavLink,Link, Routes, Route } from 'react-router-dom';
 
 const Header = ({ user, setUser }) => {
   const handleLogout = async () => {
@@ -46,8 +46,22 @@ const Header = ({ user, setUser }) => {
                 </Link>
                 
                 <ul className="nav">
-                  <li><Link to="/" className={({ isActive }) => isActive ? "active" : ""}>Principale</Link></li>
-                  <li><Link to="/propos" className={({ isActive }) => isActive ? "active" : ""}>À propos</Link></li>
+                  <li>
+                    <NavLink
+                      to="/"
+                      className={({ isActive }) => isActive ? "active" : ""}
+                    >
+                      Principale
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink 
+                      to="/propos" 
+                      className={({ isActive }) => isActive ? "active" : ""}
+                    >
+                      À propos
+                    </NavLink>
+                  </li>
                   <li><div></div></li>
                 </ul>
                 
