@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ElsmrSoufiane.github.io/static/css/main.92dfed19.css",
-    "main.js": "/ElsmrSoufiane.github.io/static/js/main.75fc7779.js",
-    "static/js/453.94fdd146.chunk.js": "/ElsmrSoufiane.github.io/static/js/453.94fdd146.chunk.js",
-    "index.html": "/ElsmrSoufiane.github.io/index.html",
-    "main.92dfed19.css.map": "/ElsmrSoufiane.github.io/static/css/main.92dfed19.css.map",
-    "main.75fc7779.js.map": "/ElsmrSoufiane.github.io/static/js/main.75fc7779.js.map",
-    "453.94fdd146.chunk.js.map": "/ElsmrSoufiane.github.io/static/js/453.94fdd146.chunk.js.map"
+    "main.css": "/static/css/main.92dfed19.css",
+    "main.js": "/static/js/main.3faafc6a.js",
+    "static/js/453.94fdd146.chunk.js": "/static/js/453.94fdd146.chunk.js",
+    "index.html": "/index.html",
+    "main.92dfed19.css.map": "/static/css/main.92dfed19.css.map",
+    "main.3faafc6a.js.map": "/static/js/main.3faafc6a.js.map",
+    "453.94fdd146.chunk.js.map": "/static/js/453.94fdd146.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.92dfed19.css",
-    "static/js/main.75fc7779.js"
+    "static/js/main.3faafc6a.js"
   ]
 }
